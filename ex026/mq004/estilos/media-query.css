@@ -14,8 +14,21 @@ Grandes telas: Acima de 1200px
 
 /*Media Query para impressoras*/
 @media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
     body{
-        background-image: url(../imagens/back-print.jpg);
+        background-image: url(../imagens/back-print.jpg);/* Desnecessario*/
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    h1{
+        text-shadow: none;
+        color: black;
     }
 
     img#phone{ display: none;}
