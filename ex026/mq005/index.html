@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
+
 <body>
     <header>
         <h1>Meu site</h1>
-        <nav>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <nav id="menu">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -22,10 +26,35 @@
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum provident harum, voluptas iste veritatis quam nulla, nihil exercitationem commodi dignissimos aperiam ab, doloribus aliquam aspernatur et molestias fuga! Harum, accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis quia praesentium, dignissimos cupiditate quam necessitatibus sapiente quaerat fugit corporis soluta optio dolores ipsum, impedit aliquam. Perspiciatis facere repellat laboriosam?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum provident harum, voluptas iste veritatis quam nulla, nihil exercitationem commodi dignissimos aperiam ab, doloribus aliquam aspernatur et molestias fuga! Harum, accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis quia praesentium, dignissimos cupiditate quam necessitatibus sapiente quaerat fugit corporis soluta optio dolores ipsum, impedit aliquam. Perspiciatis facere repellat laboriosam?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, consequuntur! Saepe nobis ut natus tenetur doloremque pariatur impedit explicabo possimus voluptatum vel sequi nihil, voluptatibus magnam eaque qui fuga esse.loremLorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, consequuntur! Saepe nobis ut natus tenetur doloremque pariatur impedit explicabo possimus voluptatum vel sequi nihil, voluptatibus magnam eaque qui fuga esse.loremLorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, consequuntur! Saepe nobis ut natus tenetur doloremque pariatur impedit explicabo possimus voluptatum vel sequi nihil, voluptatibus magnam eaque qui fuga esse.lorem</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum provident harum, voluptas iste veritatis
+                quam nulla, nihil exercitationem commodi dignissimos aperiam ab, doloribus aliquam aspernatur et
+                molestias fuga! Harum, accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                perferendis quia praesentium, dignissimos cupiditate quam necessitatibus sapiente quaerat fugit corporis
+                soluta optio dolores ipsum, impedit aliquam. Perspiciatis facere repellat laboriosam?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum provident harum, voluptas iste veritatis
+                quam nulla, nihil exercitationem commodi dignissimos aperiam ab, doloribus aliquam aspernatur et
+                molestias fuga! Harum, accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                perferendis quia praesentium, dignissimos cupiditate quam necessitatibus sapiente quaerat fugit corporis
+                soluta optio dolores ipsum, impedit aliquam. Perspiciatis facere repellat laboriosam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, consequuntur! Saepe nobis ut natus
+                tenetur doloremque pariatur impedit explicabo possimus voluptatum vel sequi nihil, voluptatibus magnam
+                eaque qui fuga esse.loremLorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, consequuntur!
+                Saepe nobis ut natus tenetur doloremque pariatur impedit explicabo possimus voluptatum vel sequi nihil,
+                voluptatibus magnam eaque qui fuga esse.loremLorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quidem, consequuntur! Saepe nobis ut natus tenetur doloremque pariatur impedit explicabo possimus
+                voluptatum vel sequi nihil, voluptatibus magnam eaque qui fuga esse.lorem</p>
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
+
 </html>
